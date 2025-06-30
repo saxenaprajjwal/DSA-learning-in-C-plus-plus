@@ -8,6 +8,6 @@
  int main(){
   
 
-int c = func(19,9);
+int c = func(15,9);
     return 0 ;
  }
