@@ -2,7 +2,12 @@
  using namespace std;
 
    int main () {
-
-      
-      return 0;
+    int num;
+    cout << "enter your num :";
+    cin >> num;
+    for(int i = 1; i <= num; i++){
+        cout << i << " ";
+    }
+      cout << endl;
+        return 0;
    }
