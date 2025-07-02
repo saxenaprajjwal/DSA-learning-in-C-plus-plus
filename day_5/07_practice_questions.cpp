@@ -28,6 +28,31 @@
       }
       n1 =  n1 / 10;
    }
-   cout << "sum = " << digSum1;  
+   cout << "sum = " << digSum1 << endl;  
+
+
+// print the digits of a given no in reverse using while loop
+ 
+   int n2 = 12345;
+   int lastdig2;
+      while(n2 > 0){
+         lastdig2 = n2 % 10;
+         n2 = n2 /10;
+         cout << lastdig2;
+      }
+         cout << endl;
+
+// reverse a given number and print the result 
+ 
+      int n3 = 123456;
+      int res = 0;
+      int lastdig3;
+      while(n3 > 0){
+         lastdig3 = n3 % 10;
+         res = res * 10 + lastdig3;
+         n3 = n3 / 10;
+      }
+         cout << "revrese = " << res << endl;
+
    return 0 ;
  }
