@@ -14,18 +14,20 @@
       n =  n / 10;
    }
    cout << endl; 
-   cout << "sum = " << digSum ;
+   cout << "sum = " << digSum << endl; 
 
 // print the sum of odd digits of a number using while loop 
 
-    
+   int n1 = 10829;
+   int digSum1 = 0;
    
-
-
-
-
-
-
-
+   while (n1 > 0){
+      int lastdig1 = n1 % 10;
+      if(lastdig1 % 2 != 0){
+            digSum1 += lastdig1;
+      }
+      n1 =  n1 / 10;
+   }
+   cout << "sum = " << digSum1;  
    return 0 ;
  }
