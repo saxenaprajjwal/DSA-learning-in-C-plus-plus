@@ -2,15 +2,30 @@
  using namespace std;
  int main(){ 
     
-    // print 
+// print the sum of digits of a number using while loop  (n= 10829)
 
+   int n = 10829;
+   int digSum = 0;                          // n % 10 gives you the last digit of n. Example: If n = 10829, then n % 10 is 9.   
+                                            // n / 10 removes the last digit from n. Example: If n = 10829, then n / 10 is 1082.
+   while (n > 0){
+      int lastdig = n % 10;
+      cout << lastdig << " ";
+      digSum = digSum + lastdig;
+      n =  n / 10;
+   }
+   cout << endl; 
+   cout << "sum = " << digSum ;
+
+// print the sum of odd digits of a number using while loop 
+
+    
    
-    
-    // print  
-    
-    
 
 
 
-    return 0 ;
+
+
+
+
+   return 0 ;
  }
