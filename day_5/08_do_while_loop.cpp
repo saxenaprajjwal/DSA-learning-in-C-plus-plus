@@ -5,7 +5,7 @@ using namespace std;
 
 // work gets done at least once irrespective of the condition 
 
-        int i = 1;
+    int i = 1;
         do {
             cout << i << " ";
             i++;
@@ -14,7 +14,7 @@ using namespace std;
 
 // diff btw while and do while loop 
 
-         int val = 1;
+    int val = 1;
         do{
             cout << "prajjwal saxena in do-while loop" << endl;
         }while(val > 5);
