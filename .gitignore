@@ -1,2 +1,8 @@
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore compiled files
 *.exe
-.vscode
+
+# Ignore temporary files
+*.log
