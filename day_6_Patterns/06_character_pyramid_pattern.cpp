@@ -3,15 +3,16 @@ using namespace std;
 
 int main(){
 
-    int n = 4;
-    char ch ='A'
+    int n = 5;
+    char ch ='A';
 
     // outer loop
     for(int i=1;i<=n;i++){
         // inner loop
-        for(int j=1;j<=i;ch++){
+        for(int j=1;j<=i;j++){
             // work
-            cout << j << " ";
+            cout << ch;     // can be used as ch++ which is a post increment
+            ch++;
         }
         cout << endl;
     }
