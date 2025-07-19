@@ -1,11 +1,15 @@
-// Your First C++ Program
-
 #include <iostream>
 using namespace std;
 
-int main() {
-    
-cd 
+void  sayHello() {
+    cout << "Hello :)\n";
+}
 
+void assistant() {
+    sayHello();
+    cout << "work done\n";
+}
+int main() {
+    assistant();
     return 0;
 }
