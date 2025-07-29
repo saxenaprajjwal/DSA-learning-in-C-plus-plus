@@ -7,8 +7,6 @@ void changeA(int a){
         cout << a << "\n"; 
     }
 
-
-
 int main(){
     int a = 10;
     changeA(a);          // do not chnages the value of variable in function in main function
