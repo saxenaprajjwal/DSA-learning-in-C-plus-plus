@@ -11,7 +11,7 @@ void changeA(int *ptr){
 
 int main(){
     int a = 10;
-    changeA(&a);           // chnages the value of variable in function in main function
+    changeA(&a);           // changes the value of variable in function in main function
     cout << a << "\n";
 
     return 0;
