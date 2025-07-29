@@ -13,6 +13,5 @@ int main(){
     int a = 10;
     changeA(&a);           // changes the value of variable in function in main function
     cout << a << "\n";
-
     return 0;
 }
