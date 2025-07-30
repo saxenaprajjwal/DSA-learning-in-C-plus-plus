@@ -39,5 +39,17 @@ int main(){
     // Accessing marks2[3] is undefined behavior
     cout << marks2[3] << endl;  
 
+    // Prints the total size in bytes of the marks2 array (number of elements * size of int)
+    cout << sizeof(marks2) << endl;
+
+    // Calculate the number of elements in the marks2 array
+    // sizeof(marks2) gives the total size in bytes of the array
+    // sizeof(int) gives the size of one int element
+    // Dividing gives the number of elements in the array
+    int n = sizeof(marks2) / sizeof(int);
+    cout << n << endl;
+
+    // Memory is statically allocated (at compile time)
+
     return 0;
 }
