@@ -3,8 +3,12 @@ using namespace std;
 
 // Array name can be converted to a pointer 
 
-void (func(int arr[])) {
+void func(int arr[]) {
     arr[0] = 1000;
+}
+
+void func2(int *ptr) {
+    ptr[0] = 1000;
 }
 
 int main(){
@@ -21,7 +25,7 @@ int main(){
     // cout << *(arr+1) << endl;    // Same as arr[1] - prints 2  
     // cout << *(arr+2) << endl;    // Same as arr[2] - prints 3
 
-    func(arr);
+    func(arr);  // **passing arrray name is equivalent to passing the pointer**
     cout << arr[0] << endl;
     return 0;
 }
