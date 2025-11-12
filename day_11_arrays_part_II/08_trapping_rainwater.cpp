@@ -4,12 +4,11 @@
 #include <climits>
 using namespace std;
 
-void trap(int *heights,int n){
-    int leftMax[20000], rightMax[20000];
-    // can be initilised with int_min but there will be extra if condition we need to write 
+int trap(int *heights,int n){
+    int leftMax[20000], rightMax[20000];              // can be initilised with int_min but there will be extra if condition we need to write 
     leftMax[0] = heights[0];  
     rightMax[n-1] = heights[n-1];
-
+                                                               // time complexity ~0 O(n)
     for(int i=1; i<n; i++){
         leftMax[i] = max(leftMax[i-1], heights[i-1]);
     }
@@ -24,7 +23,9 @@ void trap(int *heights,int n){
             waterTrapped += currWater;
         }
     }
-    cout << "waterTrapped = " << waterTrapped;}
+    cout << "waterTrapped = " << waterTrapped;
+    return waterTrapped;
+}
  
 
 int main(){
