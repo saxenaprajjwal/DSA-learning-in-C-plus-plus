@@ -10,11 +10,18 @@ void print(int arr[], int n){
 
 void bubbleSort(int arr[], int n){
     for(int i=0; i<n-1; i++){
+        bool isSWAP = false;
+        cout << "outerloop";
         for(int j=0;j<n-i-1;j++){
+            cout << "innerloop";
             if (arr[j] > arr[j+1]){
+                isSWAP = true;
                 swap(arr[j], arr[j+1]);
             }
-
+        }
+        if (!isSWAP){
+            // array is already sorted
+            return;
         }
     }
     print(arr, n);
@@ -22,8 +29,9 @@ void bubbleSort(int arr[], int n){
 
 
 int main(){
-    int arr[5] = {5,4,1,3,2};
-    bubbleSort(arr, 5);
-
+//  int arr[5] = {5,4,1,3,2};
+    int arr[10] = {1,2,3,4,5,6,7,8,9,10}; // O(1,1)
+    bubbleSort(arr, 10);
+    cout << endl;
     return 0;
 }
